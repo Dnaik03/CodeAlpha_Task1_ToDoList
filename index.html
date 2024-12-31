@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Your WHAT TO DO List</h1>
+    <div class="form-container">
+      <input type="text" id="taskName" placeholder="Task Name" required>
+      <input type="date" id="dueDate" required>
+      <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button id="addTaskBtn">Add task to list</button>
+    </div>
+
+    <h2>TO DO LIST</h2>
+    <ul id="taskList"></ul>
+
+    <h3>Calendar Marking</h3>
+    <div id="calendar-container">
+      <div id="calendar-header">
+        <button id="prevMonth">◀</button>
+        <span id="currentMonth"></span>
+        <button id="nextMonth">▶</button>
+      </div>
+      <div id="calendar"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

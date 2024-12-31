@@ -1,0 +1,134 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8cdb94;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 50px;
+  background: rgb(240, 243, 240);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(21, 49, 37, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #11351d;
+}
+
+h3 {
+  margin-top: 50px;
+  text-align: center;
+}
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.priority {
+  font-weight: bold;
+  color: #14471f;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+#calendar-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+.current-day {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.task-marker {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background-color: #ffc107;
+  color: black;
+  font-size: 12px;
+  padding: 2px;
+  border-radius: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
